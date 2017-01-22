@@ -1,10 +1,22 @@
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'maven-publish'
+
+sourceCompatibility = 1.8
+apply from: 'versions.gradle'
+version '0.0.1'
+
+idea {
+	module {
+		excludeDirs += file('.idea')
+		excludeDirs += file('gradle')
+	}
+}
 
 repositories {
-    mavenCentral()
+	mavenCentral()
 }
 
 dependencies {
-    testCompile 'junit:junit:4.12'
+	testCompile "junit:junit:${versions.junit}"
 }

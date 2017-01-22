@@ -1,0 +1,5 @@
+project.ext {
+	versions = [
+		junit: '4.12',
+	]
+}
