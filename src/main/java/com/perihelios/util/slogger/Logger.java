@@ -44,7 +44,7 @@ public class Logger {
         throw new UnsupportedOperationException("Not yet implemented");
     }
 
-    public static Logger getLogger(Class<?> logger) {
+    public static Logger getLogger(Class<?> category) {
         throw new UnsupportedOperationException("Not yet implemented");
     }
 }
